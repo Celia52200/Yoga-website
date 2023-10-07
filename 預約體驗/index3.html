@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogo預約體驗</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Scss -->
+    <link rel="stylesheet" href="Sass3/All3.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Bootstrap 5 -->
+   <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Jquery -->
+    <script src="javascript/code.jquery.com_jquery-3.7.1.min.js"></script>
+    
+</head>
+<body>
+    <!-- header - navbar -->
+    <div class="container">
+        <div class="header">
+            <a href="../index1.html"><img src="image3/YOGO1.png" alt="logo" class="logo"></a>
+                <ul class="navbar">
+                    <li><a href="../index1.html">首頁</a></li> 
+                    <li><a href="../服務與教師介紹/index2.html">服務</a></li> 
+                    <li><a href="/預約體驗/index3.html">預約體驗</a></li> 
+                    <li><a href="../聯繫我們/index4.html">聯繫我們</a></li>
+                </ul>
+        </div>
+        
+
+        <!-- content input -->
+        <div class="content">
+            <h1>填寫表單</h1>
+        <form class="xtx-form">
+            <div data-prop="username" class="xtx-form-item">
+                <span class="iconfont icon-name">姓名</span>
+                <input name="username" class="input-box" type="text" placeholder="設置用戶名稱">
+                <span class="msg"></span>
+            </div>
+            <div data-prop="phone" class="xtx-form-item">
+                <span class="iconfont icon-phone">電話號碼</span>
+                <input name="phone"  class="input-box"  type="text" placeholder="輸入手機號">
+                <span class="msg"></span>
+            </div>
+            <div data-prop="email" class="xtx-form-item">
+                <span class="iconfont icon-email">Email</span>
+                <input name="email"  class="input-box"  type="text" placeholder="輸入電子郵件">
+                <span class="msg"></span>
+            </div>
+            <div data-prop="address" class="xtx-form-item">
+                <span class="iconfont icon-address">地址</span>
+                <input name="email"  class="input-box"  type="text" placeholder="輸入地址">
+                <span class="msg"></span>
+            </div>
+            </form>
+            <div class="btn">
+                <button class="send">送出</button>
+                <button>重置</button>
+            </div>
+            
+        </div>
+
+        <div class="active">
+            <h1>公告活動</h1>
+        </div>
+
+        <div class="section">
+            <div class="card">
+                <img src="image3/教學2.JPG" alt="">
+                <div class="text">
+                    <a href="" class="card-link" data-toggle="modal"  data-target="#modalId1">
+                    <h3>新辦會員活動</h3>
+                    <p>即日起-2024年1月30日</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image3/教學1.JPG" alt="">
+                <div class="text">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#modalId2">
+                    <h3>假期時段新活動</h3>
+                    <p>即日起-2023年10月10日</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image3/教學3.JPG" alt="">
+                <div class="text">
+                    <a href="#" class="card-link" data-toggle="modal"  data-target="#modalId3">
+                    <h3>初學者必知7種優點</h3>
+                    <p>點我看更多資訊</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalId1">
+            <div class="modal-dialog bg-success">
+                <div class="modal-content">
+                    <div class="modal-header pb-2">
+                        <h1 class="ml-4">新辦會員活動</h1>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mt-2 p-3">
+                            <div class="col-md-6">
+                                <img src="image3/banner1.JPG" width="700px" height="300px" class="rounded">
+                            </div>
+                            <div class=" col-md-6">
+                                <h2 class="product_name">即日起-2024年1月30日</h2>
+                                <p class="product_desc">凡是新開戶的瑜珈會員，入會價1000元，如有團體價打六折。<br>
+                                    詳請至現場與<a href="index3.html">我們預約體驗。</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalId2">
+            <div class="modal-dialog bg-success">
+                <div class="modal-content">
+                    <div class="modal-header pb-2">
+                        <h1 class="ml-4">假期時段新活動</h1>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mt-2 p-3">
+                            <div class="col-md-6">
+                                <img src="image3/banner2.JPG" width="700px" height="300px" class="rounded">
+                            </div>
+                            <div class=" col-md-6">
+                                <h2 class="product_name">即日起-2023年10月10日</h2>
+                                <p class="product_desc">2023年10月09日至2023年10月10日連假照常營運，歡迎瑜珈的會員與新會員們前來體驗瑜珈。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalId3">
+            <div class="modal-dialog bg-success">
+                <div class="modal-content">
+                    <div class="modal-header pb-2">
+                        <h1 class="ml-4">初學者必知7種優點</h1>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mt-2 p-3">
+                            <div class="col-md-6">
+                                <img src="image3/banner3.JPG" width="700px" height="300px" class="rounded">
+                            </div>
+                            <div class=" col-md-6">
+                                <h2 class="product_name">初學者必知7種優點</h2>
+                                <p class="product_desc">1.瑜伽改善憂鬱與情緒，2.瑜伽增肌減脂，3.瑜伽減少發炎反應，4.瑜伽減少心臟病風險
+                                    ，5.瑜伽改善氣喘，6.瑜伽幫助睡眠，7.瑜伽治療創傷後壓力症候群。
+                                </p><br>
+                                <p class="product_desc">有興趣趕緊來<a href="index3.html">點我預約。</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- footer -->
+        <div class="footer">
+            <h3>關於YOGA瑜珈</h3>
+            <p>地址:台北市大安區安和路二段</p>
+            <p>YOGA 為瑜伽課程品牌，旨在提供大眾化且高品質的瑜伽體驗，舞動世界教育領導品牌。</p>
+            <p>Copyright @ 2023,Designed by Celia</p>
+            <a href="#">回頂部</a>            
+          </div>
+    </div>
+    
+</body>
+<script src="javascript/script3.js"></script>
+</html>

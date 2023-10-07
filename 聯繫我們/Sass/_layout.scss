@@ -1,0 +1,315 @@
+*{
+    box-sizing: border-box;
+    // outline: 1px solid red;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1680px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* header navbar */
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+    img{
+        width: 200px;
+        margin-bottom: 20px;
+    }
+}
+// navbar
+.navbar{
+    display: flex;
+    text-align: center;
+    
+    li{
+        margin: 0 10px;
+        font-size: $font-size-s;
+        font-weight: $font-weight-8;
+        list-style: none;
+    }
+    
+    li a{
+        text-decoration: none;
+        padding: 10px;
+        display: inline-block;
+        color:$link-color-1;
+        font-size: $font-size-s;
+
+        &:hover{
+            background: $background-color-2;
+            color: $link-color-hover-1;
+            font-size: $font-size-m;
+            border-radius: 50px;
+        }
+        &:active{
+            color: $link-color-active;
+            border-radius: 20px;
+        }
+    } 
+}
+
+.content{
+    margin-bottom: 50px;
+    img{
+        width: 100%;;
+    }
+}
+
+// accordion Q&A
+.question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h1{
+        text-align: center;
+        color: $font-color-1;
+        font-size: $font-size-lg;
+        font-family: $font-family;
+        font-weight: $font-weight-7;
+        margin-top: 50px;
+    }
+}
+    .accordion{
+        margin-top: 20px;
+        max-width: 1280px;
+
+        .contentBox{
+            position: relative;
+            padding: 10px 20px;
+            position: relative;
+
+            &.active{
+                .content2{
+                height: 100px;
+                padding: 10px;
+                }
+            }
+            
+            
+            .lable{
+                position: relative;
+                background-color: $background-color-3;
+                color: $font-color-3;
+                padding: 10px;
+                font-size: $font-size-s;
+                font-weight: $font-weight-5;
+               
+    
+                &::before{
+                    position: absolute;
+                    content: "+";
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                    font-size: $font-size-m;
+                }  
+            }
+            .content2{
+                position: relative;
+                background-color: #fff;
+                height: 0;
+                overflow: hidden;
+                transition: 0.5s;
+                overflow-y: auto;
+                font-size: $font-size-s;
+                background-color: $background-color-1;
+                font-weight: $font-weight-5;
+            }
+        }
+        
+       
+    }
+
+    // Address infomation
+.section{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 100px 0;
+    
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    background-color: $background-color-1;
+
+    h1{
+        font-size: $font-size-lg;
+        color: $font-color-1;
+        font-family: $font-family;
+        font-weight: $font-weight-9;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: $font-size-m;
+        color: $font-color-1;
+        font-family: $font-family;
+        font-weight: $font-weight-5;
+    }
+    
+}
+
+// footer
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    color: $font-color-3;
+    padding: 30px;
+    background-color: $background-color-2;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: $font-color-3;
+        display: inline-block;
+        
+        &:hover{
+          color: $link-color-hover-2;
+        }
+    }
+  }
+  
+
+//  Rwd max-width 898px
+
+@media screen and (max-width:898px){
+    .header{
+        padding: 0;
+
+        .logo{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 150px;
+            z-index: 1;
+        }
+
+    }
+    
+    .navbar{
+        flex-direction: column;
+        width: 100%;
+
+        li{
+            margin: 20px auto; 
+            font-weight: $font-weight-b;
+        }
+        li a{
+            font-size: $font-size-s;
+            color: $font-color-2;
+            
+            &:hover{
+                background-color: $background-color-1;
+                font-size: $font-size-m;
+            }
+        }
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        
+        iframe{
+            width: 100%;
+        }
+    }
+    .info{
+        background-color: $background-color-4;
+        width: 100%;
+        h1{
+            margin-top: 20px;
+            font-size: $font-size-lg;
+            color: $font-color-3;
+        }
+        p{
+            font-size: $font-size-s;
+            color: $font-color-3;
+        }
+    }
+    .footer{
+        background-color: $background-color-1;
+        color: $font-color-1;
+
+        a{
+            color: $link-color-2;
+        }
+    }
+}
+
+// Rwd max-width 767px
+@media screen and (max-width:767px){
+    .header{
+        padding: 0;
+
+        .logo{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 120px;
+            z-index: 1;
+        }
+
+    }
+    
+    .navbar{
+        flex-direction: column;
+        width: 100%;
+
+        li{
+            margin: 20px auto; 
+            font-weight: $font-weight-b;
+        }
+        li a{
+            font-size: $font-size-s;
+            color: $font-color-2;
+            
+            &:hover{
+                font-size: $font-size-m;
+                color: $font-color-2;
+            }
+        }
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        iframe{
+            width: 100%;
+        }
+    }
+    .info{
+        background-color: $background-color-4;
+        width: 100%;
+        h1{
+            margin-top: 20px;
+            font-size: $font-size-m;
+            color: $font-color-3;
+        }
+        p{
+            font-size: $font-size-s;
+            color: $font-color-3;
+        }
+    }
+    .footer{
+        background-color: $background-color-1;
+        color: $font-color-1;
+
+        a{
+            color: $link-color-2;
+        }
+    }
+}
+
